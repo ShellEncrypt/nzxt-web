@@ -1,0 +1,1435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url(Gotham\ Bold.otf);
+}
+
+@font-face{
+    font-family: 'GothamThin';
+    src: url(Gotham\ Thin.otf);
+}
+
+.nav-root{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #313235;
+    color: white;
+    font-family: 'GothamThin';
+    height: 56px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.nav-container div:first-child{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 115rem;
+}
+
+.nav-container>div:first-child{
+    width: 1300px;
+}
+
+.nav-container>div:last-child i:last-child{
+    margin-right: 60px;
+}
+
+.nav-container>div:last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 135px;
+}
+
+.nav-container>div:last-child i{
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: 0.2s;
+}
+
+.nav-container>div:last-child i:hover{
+    color: #a7a7a7;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.2s;
+}
+
+.nav-item:hover{
+    color: #a7a7a7;
+}
+
+.nav-item i{
+    margin-left: 7px;
+}
+
+.nav-container div:first-child div:first-child div:first-child{
+    position: absolute;
+    visibility: hidden;
+}
+
+.nav-container div:first-child div:first-child div:last-child{
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url(img/NZXT.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/back.avif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 54rem;
+    width: 100%;
+}
+
+.banner-panel{
+    text-align: left;
+    height: 100%;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-family: 'GothamBold';
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.banner-panel button{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 270px;
+    margin-top: 15px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.192) 0 0 30px 10px;
+    background-color: #7d0be9;
+    color: white;
+    transition: 0.2s;
+}
+
+.banner-panel button:hover{
+    scale: 1.02;
+    background-color: #740bd6;
+}
+
+.banner-pc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 700px;
+}
+
+.banner-pc img{
+    width: 110%;
+}
+
+.content{
+    margin-top: 60px;
+}
+
+.tiles{
+    width: 85rem;
+    overflow: visible;
+}
+
+.tiles-item{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'GothamBold';
+}
+
+.tiles-item:nth-child(1) h3,h4,.tiles-item:nth-child(2) h3,h4{
+    color: #000000e3;
+    letter-spacing: 0.8px;
+}
+
+.tiles-item:nth-child(1) p,.tiles-item:nth-child(2) p{
+    font-family: 'GothamThin';
+    color: #00000095;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.tiles-item:nth-child(1) hr,.tiles-item:nth-child(2) hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tiles-item:nth-child(1) button,.tiles-item:nth-child(2) button{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.116) 0 0 15px 7px;
+    background-color: #7d0be9;
+    color: white;
+    transition: 0.2s;
+}
+
+.tiles-item:nth-child(1) button:hover,.tiles-item:nth-child(2) button:hover{
+    scale: 1.02;
+    background-color: #740bd6;
+}
+
+.tiles-item:nth-child(1) div,.tiles-item:nth-child(2) div{
+    height: 440px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 85%;
+    background-color: #dcdbe650;
+    transition: 0.2s;
+}
+
+.tiles-item:nth-child(1) div:hover,.tiles-item:nth-child(2) div:hover{
+    background-size: 90%;
+}
+
+.tiles-item:nth-child(3){
+    background-color: #242424;
+    color: white;
+}
+
+.tiles-item:nth-child(3) img{
+    width: 100%;
+}
+
+.tiles-item:nth-child(3) div:nth-child(1){
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 60%;
+}
+
+.tiles-item:nth-child(3) div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 30px 30px;
+    height: 31.7%;
+}
+
+.tiles-item:nth-child(3) img{
+    display: flex;
+    width: 200px;
+}
+
+.tiles-item:nth-child(3) div p{
+    font-size: 20px;
+}
+
+.tiles-item:nth-child(3) button,.diablo-panel div button{
+    font-family: 'GothamThin';
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    height: 45px;
+    width: 50%;
+    margin-top: 20px;
+    font-size: 20px;
+    box-shadow: none;
+    background-color: transparent;
+    color: white;
+    transition: 0.2s;
+}
+
+.tiles-item:nth-child(3) button:hover,.diablo-panel div button:hover{
+    scale: 1.02;
+}
+
+.diablo-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    height: 400px;
+    text-decoration: none;
+    font-family: 'GothamBold';
+    color: white;
+    border-radius: 10px;
+    background-image: url(img/diablo.avif);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.diablo-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.diablo-panel{
+    display: flex;
+    text-align: left;
+    line-height: 30px;
+    font-size: 20px;
+    height: 100%;
+}
+
+.diablo-panel div:nth-child(1){
+    display: block;
+    width: 800px;
+    height: 100%;
+    background-image: url(img/diablo-pc.avif);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: left 50%;
+}
+
+.diablo-panel div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 380px;
+}
+
+.diablo-panel div:nth-child(2) img{
+    width: 200px;
+}
+
+.diablo-panel div p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.diablo-panel h1{
+    font-family: 'GothamBold';
+    letter-spacing: 2px;
+}
+
+.diablo-panel p{
+    font-family: 'GothamThin';
+}
+
+.player-prime-container{
+    padding-left: 100px;
+    width: 370px;
+}
+
+.player-prime-container h1{
+    font-size: 50px;
+    letter-spacing: 2.5px
+}
+
+.player-prime-container p{
+    font-size: 17px;
+    letter-spacing: 1.1px
+}
+
+.player-prime-container button{
+    font-family: 'GothamThin';
+    margin-top: 15px;
+    height: 43px;
+    width: 170px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 17px;
+    border-radius: 7px;
+}
+
+.player-prime-banner .dots{
+    margin-right: 50%;
+    letter-spacing: 5px;
+}
+
+.player-prime-content{
+    margin-top: 70px;
+    height: 768px;
+}
+
+.player-prime-content img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 768px;
+    z-index: -1;
+}
+
+.player-prime-banner{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 95rem;
+    color: white;
+    letter-spacing: 1.1px;
+    font-family: 'GothamBold';
+    font-size: 25px;
+}
+
+.player-prime-banner div{
+    width: 670px;
+}
+
+.player-prime-banner h1{
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.player-prime-banner p{
+    font-family: 'GothamThin';
+    font-size: 17px;
+}
+
+.component-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85rem;
+    margin: 60px auto;
+}
+
+.component-section>h1{
+    text-align: center;
+    font-family: 'GothamBold';
+    font-size: 45px;
+    letter-spacing: 1.8px;
+}
+
+.component-section>p{
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    font-family: 'GothamThin';
+    font-size: 16px;
+    width: 600px;
+    letter-spacing: 1.8px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.component-item{
+    height: 545px;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.component-item h1{
+    font-family: 'GothamBold';
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+
+.component-item p{
+    font-family: 'GothamThin';
+}
+
+.component-item a{
+    font-family: 'GothamThin';
+    display: inline-block;
+    text-decoration: none;
+    color: #871ee9;
+    letter-spacing: 1px;
+}
+
+.component-item a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.component-item:nth-child(1),.component-item:nth-child(2){
+    background-position: 0 bottom;
+}
+
+.component-item:nth-child(1) h1,.component-item:nth-child(2) h1{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.component-item:nth-child(1) p,.component-item:nth-child(2) p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.component-item:nth-child(3),.component-item:nth-child(4){
+    font-size: 14px;
+    background-position: 0 bottom;
+    color: white;
+}
+
+.component-item:nth-child(3) h1,.component-item:nth-child(4) h1{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.component-item:nth-child(3) p,.component-item:nth-child(4) p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.component-item:nth-child(5),.component-item:nth-child(6),.component-item:nth-child(7){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    background-size: 100% 70%;
+    background-color: #F6F6F9;
+}
+
+.component-item:nth-child(5) a,.component-item:nth-child(6) a,.component-item:nth-child(7) a{
+    margin: 5px auto;
+    font-size: 14px;
+}
+
+.tiles-container{
+    display: flex;
+    margin: 0 auto;
+    width: 85rem;
+}
+
+.shop-tiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-tiles h1{
+    font-family: 'GothamBold';
+}
+
+.shop-tiles p{
+    font-family: 'GothamThin';
+}
+
+.shop-tiles>h1{
+    letter-spacing: 2px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.shop-tiles>p{
+    letter-spacing: 0.8px;
+    text-align: center;
+    width: 570px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.shop-tiles-item{
+    width: 100%;
+    height: 100%;
+}
+
+.shop-tiles-item div:nth-child(1){
+    background-color: #242424;
+    background-repeat: no-repeat;
+    background-color: #F6F6F9;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+    width: 100%;
+    height: 20rem;
+    transition: 0.2s;
+}
+
+.shop-tiles-item h1{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.shop-tiles-item p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.shop-tiles-item>p:nth-of-type(2){
+    color: #15b630;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.shop-tiles-item p:nth-of-type(3), p:nth-of-type(4){
+    color: #000;
+    display: inline-block;
+}
+
+#discount{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration-line: line-through;
+    margin-right: 10px;
+}
+
+.shop-tiles-item:nth-child(1) div:first-child{
+    background-image: url(img/shop/player-two.avif);
+}
+
+.shop-tiles-item:nth-child(2) div:first-child{
+    background-image: url(img/shop/player-two-prime.avif);
+}
+
+.shop-tiles-item:nth-child(3) div:first-child{
+    background-image: url(img/shop/player-three.avif);
+}
+
+.shop-tiles-item:nth-child(4) div:first-child{
+    background-image: url(img/shop/player-three-prime.avif);
+}
+
+.shop-tiles-item:nth-child(5) div:first-child{
+    background-image: url(img/shop/h510-flow.avif);
+}
+
+.shop-tiles-item:nth-child(6) div:first-child{
+    background-image: url(img/shop/kraken-z63-rgb.avif);
+}
+
+.shop-tiles-item:nth-child(7) div:first-child{
+    background-image: url(img/shop/h7-elite.avif);
+}
+
+.shop-tiles-item:nth-child(8) div:first-child{
+    background-image: url(img/shop/h5-flow.avif);
+}
+
+.shop-tiles-item div:hover{
+    background-size: 260px 260px;
+}
+
+.shop-tiles-item div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+
+.shop-tiles-item div span{
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.product-color{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.product-color span{
+    display: inline-block;
+}
+
+.product-color span:nth-child(1){
+    background-color: white;
+    outline-offset: 1px;
+    outline: 2px solid #8C35FD;
+    box-shadow: inset 0 0 10px 0 #00000050;
+    margin-right: 10px;
+}
+
+.product-color span:nth-last-child(1){
+    outline-offset: 2px;
+    background-color: black;
+    outline: 1.5px solid #75747B;
+    margin-right: 10px;
+}
+
+.product-color span:nth-last-child(n+2) ~ span:nth-last-child(2){
+    background: linear-gradient(90deg, white 50%, black 50%);
+    outline-offset: 2px;
+    outline: 1.5px solid #75747B;
+    box-shadow: inset 0 0 10px 0 #00000050;
+    margin-right: 10px;
+}
+
+.shop-tiles-item div:nth-of-type(2) p>p{
+    font-family: 'Gotham';
+    font-size: -1px;
+}
+
+.affirm{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.affirm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 85rem;
+    background-image: url(img/affirm-back.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.affirm-content{
+    width: 85%;
+    text-decoration: none;
+    color: white;
+}
+
+.affirm-content h1{
+    font-family: 'GothamBold';
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.affirm-content p{
+    font-family: 'GothamThin';
+    font-size: 20px;
+    width: 450px;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+.wot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wot h1{
+    font-family: 'GothamBold';
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.wot p{
+    font-family: 'GothamThin';
+    font-size: 14px;
+}
+
+.wot-container{
+    align-items: center;
+    width: 85rem;
+}
+
+.wot-content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wot-item div:nth-child(1){
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.wot-item div:nth-child(2){
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.wot-item{
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.75);
+    background-color: #F6F6F9;
+}
+
+.wot-item div p{
+    text-align: center;
+    line-height: 27px;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nzxt{
+    margin-top: 80px;
+}
+
+.nzxt-container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 722px;
+    background-image: url(img/nzxt-back.avif);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nzxt-content p,h1,a{
+    text-decoration: none;
+    font-family: 'GothamBold';
+}
+
+.nzxt-content p{
+    font-size: 15px;
+}
+
+.nzxt-content h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.nzxt-content a{
+    color: white;
+    font-family: 'GothamThin';
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#555b61, 0.05%, #1A1C1E);
+    width: 100%;
+}
+
+.footer-container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 90rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-content{
+    width: 100%;
+}
+
+.email{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+    font-family: 'GothamBold';
+}
+
+.email div{
+    display: inline-block;
+}
+
+.email div:nth-child(1){
+    margin-left: 70px;
+}
+
+.email div h1{
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+.email div p{
+    font-family: 'GothamThin';
+    font-size: 22px;
+}
+
+.email div:first-child{
+    width: 50%;
+}
+
+.email div:nth-child(2){
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.email div input{
+    border: none;
+    border-radius: 5px;
+    margin-left: 70px;
+    width: 25rem;
+    height: 40px;
+}
+
+.email div button{
+    height: 40px;
+    width: 120px;
+    color: #91919C;
+    font-family: 'GothamThin';
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CDCDD5;
+    margin-left: 10px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.icons div{
+    display: inline-block;
+}
+
+.icons div i{
+    color: #9CA3AF;
+    margin-right: 15px;
+}
+
+.icons div i:hover{
+    color: #a27bb9;
+}
+
+.icons div div:nth-child(2){
+    display: inline-block;
+}
+
+.icons div:nth-child(2) p{
+    color: #9CA3AF;
+    margin-bottom: 10px;
+    font-family: 'GothamThin';
+    font-size: 14px;
+}
+
+.icons div:nth-child(2) button{
+    font-family: 'GothamThin';
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.icons div:nth-child(2) i{
+    color: white;
+    margin-left: 5px;
+}
+
+.info-columns{
+    margin-top: 60px;
+}
+
+.info-columns h3,p{
+    font-size: 14px;
+    font-family: 'GothamThin';
+}
+
+.info-columns h3{
+    margin-bottom: 20px;
+    letter-spacing: 1.1px;
+}
+
+.info-columns p{
+    color: #9CA3AF;
+    margin-bottom: 20px;
+    letter-spacing: 0.8px;
+}
+
+.info-columns p:hover{
+    color: white!important;
+    cursor: pointer;
+}
+
+.rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: #1A1C1E;
+    color: white;
+    padding: 50px;
+}
+
+.rights-container{
+    width: 90rem;
+    display: flex-start;
+    align-items: center;
+    justify-content: flex;
+    flex-direction: column;
+}
+
+.rights div div p{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.rights div div:nth-child(1) p{
+    font-family: 'GothamBold';
+}
+
+.rights div div:nth-child(2) p{
+    font-family: 'GothamThin';
+    color: #9CA3AF!important;
+}
+
+.rights div div:nth-child(2) p:hover{
+    cursor: pointer;
+    font-family: 'GothamThin';
+    color: white!important;
+}
+
+.rights div div:nth-child(2) p:nth-child(1):hover{
+    cursor: auto;
+    color: #9CA3AF!important;
+}
+
+@media screen and (max-width: 1535px){
+    .tiles{
+        width: 70rem;
+    }
+
+    .component-grid{
+        width: 70rem;
+    }
+    .component-item{
+        background-position: 50% 100%!important;
+        background-size: contain, 100% 100%!important;
+    }
+    .component-3-grid .component-item{
+        background-position: 50% 0%!important;
+        background-size: 115% 67%!important;
+    }
+    .component-3-grid .component-item h1{
+        font-size: 27px;
+    }
+
+    .component-3-grid{
+        width: 70rem;
+    }
+
+    .tiles-container{
+        width: 70rem;
+    }
+
+    .affirm-container{
+        width: 70rem;
+    }
+
+    .wot-container{
+        width: 70rem;
+    }
+}
+
+@media screen and (max-width: 1310px){
+    .tiles{
+        width: 63rem;
+    }
+    .tiles-item:nth-child(3) div:first-child{
+        background-size: 130% 100%!important;
+    }
+    .tiles-item:nth-child(3) div p{
+        font-size: 18px;
+    }
+
+    .component-grid{
+        width: 63rem;
+    }
+    .component-item{
+        background-position: 50% 100%!important;
+        background-size: contain, 100% 100%!important;
+    }
+    .component-3-grid .component-item{
+        background-position: 50% 0%!important;
+        background-size: 130% 70%!important;
+    }
+    .component-3-grid .component-item h1{
+        font-size: 25px;
+    }
+
+    .component-3-grid{
+        width: 63rem;
+    }
+
+    .tiles-container{
+        width: 63rem;
+    }
+
+    .affirm-container{
+        width: 63rem;
+    }
+
+    .wot-container{
+        width: 63rem;
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .tiles{
+        width: 58rem;
+    }
+    .tiles-item:nth-child(3) div:first-child{
+        background-size: 130% 100%!important;
+    }
+    .tiles-item:nth-child(3) div p{
+        font-size: 18px;
+    }
+
+    .component-grid{
+        width: 58rem;
+    }
+    .component-item{
+        background-position: 50% 100%!important;
+        background-size: contain, 100% 100%!important;
+        height: 500px;
+    }
+    .component-3-grid .component-item{
+        background-position: 50% 0%!important;
+        background-size: 125% 63%!important;
+    }
+    .component-3-grid .component-item h1{
+        font-size: 20px;
+    }
+    .component-3-grid .component-item a{
+        width: 100%;
+    }
+
+    .component-3-grid{
+        width: 58rem;
+    }
+
+    .tiles-container{
+        width: 58rem;
+    }
+
+    .affirm-container{
+        width: 58rem;
+    }
+
+    .wot-container{
+        width: 58rem;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .nav-root{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        height: 55px;
+    }
+    .nav-root-container{
+        height: 100%;
+        width: 95%;
+    }
+    .nav-root-container>div{
+        display: inline-flex;
+        width: 49%;
+        height: 100%;
+    }
+    .nav-root-container>div:nth-child(2){
+        justify-content: flex-end;
+        color: #7315E5;
+    }
+    .nav-root-container>div:nth-child(1){
+        color: #374151;
+    }
+    .nav-root-container>div:nth-child(1) .root-item:nth-child(2){
+        width: 100px;
+        background-image: url(img/nzxt-black.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 85%;
+    }
+    .root-item{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .root-item:nth-child(1),.root-item:nth-child(2){
+        width: 30px;
+    }
+    .root-item i{
+        position: absolute;
+    }
+
+    nav{
+        position: fixed;
+        transform: translate(-101%);
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        width: 50%;
+        background-color: #fff;
+        color: #313235;
+
+    }
+    .nav-container div:first-child div:first-child div:last-child{
+        background-image: url(img/nzxt-black.svg);
+    }
+    .nav-container{
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+    }
+    .nav-container div:first-child div:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-container div:first-child div:first-child div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+    .nav-container>div:last-child{
+        visibility: hidden;
+    }
+    .nav-container div:first-child div:first-child div:first-child{
+        width: fit-content;
+        position: relative;
+        visibility: visible;
+    }
+    .nav-container div:first-child{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        width: 100%;
+    }
+
+    .tiles{
+        width: 53rem;
+    }
+    .tiles-item:nth-child(3) div:first-child{
+        background-size: 130% 100%!important;
+    }
+    .tiles-item:nth-child(3) div p{
+        font-size: 18px;
+    }
+
+    .component-grid{
+        width: 53rem;
+    }
+    .component-item{
+        background-position: 50% 100%!important;
+        background-size: contain, 100% 100%!important;
+        height: 500px;
+    }
+    .component-3-grid .component-item{
+        background-position: 50% 0%!important;
+        background-size: 125% 63%!important;
+    }
+    .component-3-grid .component-item h1{
+        font-size: 20px;
+    }
+    .component-3-grid .component-item a{
+        width: 100%;
+    }
+
+    .component-3-grid{
+        width: 53rem;
+    }
+
+    .tiles-container{
+        width: 53rem;
+    }
+
+    .affirm-container{
+        width: 53rem;
+    }
+
+    .wot-container{
+        width: 53rem;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .nav-root{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        height: 55px;
+    }
+    .nav-root-container{
+        height: 100%;
+        width: 95%;
+    }
+    .nav-root-container>div{
+        display: inline-flex;
+        width: 49%;
+        height: 100%;
+    }
+    .nav-root-container>div:nth-child(2){
+        justify-content: flex-end;
+        color: #7315E5;
+    }
+    .nav-root-container>div:nth-child(1){
+        color: #374151;
+    }
+    .nav-root-container>div:nth-child(1) .root-item:nth-child(2){
+        width: 100px;
+        background-image: url(img/nzxt-black.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 85%;
+    }
+    .root-item{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .root-item:nth-child(1),.root-item:nth-child(2){
+        width: 30px;
+    }
+    .root-item i{
+        position: absolute;
+    }
+
+    nav{
+        position: fixed;
+        transform: translate(-101%);
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        width: 50%;
+        background-color: #fff;
+        color: #313235;
+
+    }
+    .nav-container div:first-child div:first-child div:last-child{
+        background-image: url(img/nzxt-black.svg);
+    }
+    .nav-container{
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+    }
+    .nav-container div:first-child div:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-container div:first-child div:first-child div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+    .nav-container>div:last-child{
+        visibility: hidden;
+    }
+    .nav-container div:first-child div:first-child div:first-child{
+        width: fit-content;
+        position: relative;
+        visibility: visible;
+    }
+    .nav-container div:first-child{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        width: 100%;
+    }
+
+    .diablo-panel div:first-child{
+        background-size: 120%;
+    }
+    .diablo-panel div:last-child{
+        padding: 50px;
+        font-size: 14px;
+    }
+    .diablo-panel div:last-child h1{
+
+    }
+
+    .tiles{
+        width: 40rem;
+    }
+    .tiles-item:nth-child(3) div:first-child{
+        background-size: 130% 100%!important;
+    }
+    .tiles-item:nth-child(3) div p{
+        font-size: 18px;
+    }
+
+    .component-grid{
+        width: 40rem;
+    }
+    .component-item{
+        background-position: 50% 100%!important;
+        background-size: contain, 100% 100%!important;
+        height: 500px;
+        padding: 20px;
+    }
+    .component-3-grid .component-item{
+        background-position: 50% 0%!important;
+        background-size: 125% 63%!important;
+    }
+
+    .component-3-grid{
+        width: 40rem;
+    }
+
+    .tiles-container{
+        width: 40rem;
+    }
+
+    .affirm-container{
+        width: 40rem;
+    }
+
+    .wot-container{
+        width: 40rem;
+    }
+}

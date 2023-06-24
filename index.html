@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/1d95b91b11.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body id="bod">
+    <div class="container">
+        <header>
+            <div class="nav-root">
+                <div class="nav-root-container">
+                    <div>
+                        <div class="root-item" onclick="navigation_open()">
+                            <i class="fa-solid fa-bars fa-xl"></i>
+                        </div>
+                        <div class="root-item"></div>
+                    </div>
+                    <div>
+                        <div class="root-item">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        </div>
+                        <div class="root-item">
+                            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="navi">
+                <div class="nav-container">
+                    <div>
+                        <div>
+                            <div class="nav-item" onclick="navigation_close()"><i class="fa-solid fa-xmark fa-xl"></i></div>
+                            <div class="nav-item"></div>
+                        </div>
+                        <div class="nav-item"><p>Gaming PCs</p> <i class="fa-solid fa-chevron-down fa-2xs"></i></div>
+                        <div class="nav-item"><p>Components</p> <i class="fa-solid fa-chevron-down fa-2xs"></i></div>
+                        <div class="nav-item"><p>Monitors</p> <i class="fa-solid fa-chevron-down fa-2xs"></i></div>
+                        <div class="nav-item"><p>Peripherals</p> <i class="fa-solid fa-chevron-down fa-2xs"></i></div>
+                        <div class="nav-item"><p>Software</p> <i class="fa-solid fa-chevron-down fa-2xs"></i></div>
+                        <div class="nav-item"><p>Community</p> <i class="fa-solid fa-chevron-down fa-2xs"></i></div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        <i class="fa-solid fa-question fa-xl"></i>
+                        <i class="fa-regular fa-user fa-xl"></i>
+                        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="banner">
+        <div class="banner-panel">
+            <div class="dots">
+                <span style="display: inline-block; height: 20px; width: 20px; background-color: #ffffff70; border-radius: 100%;"></span>
+                <span style="display: inline-block; height: 20px; width: 40px; background-color: #ffffff; border-radius: 10px;"></span>
+                <span style="display: inline-block; height: 20px; width: 20px; background-color: #ffffff70; border-radius: 100%;"></span>
+            </div>
+            <h1>Ready Player: Two</h1>
+            <h2>Game, stream and create.</h2>
+            <button>Shop Player: Two</button>
+        </div>
+        <div class="banner-pc"><img src="img/computer.avif"></div>
+    </div>
+    <div class="content">
+        <section class="tiles-1">
+            <div class="tiles">
+                <div class="tiles-item">
+                    <div style="background-image: url(img/Player-two.avif);"></div>
+                    <h3>Player: Two</h3>
+                    <p>H5 Elite RTX 4070 Gaming PC</p>
+                    <hr>
+                    <h4>Key Specs</h4>
+                    <p>AMD Ryzen™ 5 5600X</p>
+                    <p>NVIDIA® GeForce RTX™ 4070</p>
+                    <p>16GB (2 x 8GB) 3200 MHz (max speed)</p>
+                    <hr>
+                    <p style="font-weight: 500; color: #000000e3;">$1,599.00</p>
+                    <button>Shop</button>
+                </div>
+                <div class="tiles-item">
+                    <div style="background-image: url(img/Player-two-prime.avif);"></div>
+                    <h3>Player: Two Prime</h3>
+                    <p>H5 Elite RTX 4070 Ti Gaming PC</p>
+                    <hr>
+                    <h4>Key Specs</h4>
+                    <p>AMD Ryzen™ 7 5800X</p>
+                    <p>NVIDIA® GeForce RTX™ 4070 Ti</p>
+                    <p>32GB (2 x 16GB) 3200 MHz (max speed)</p>
+                    <hr>
+                    <p style="font-weight: 500; color: #000000e3;">$1,999.00</p>
+                    <button>Shop</button>
+                </div>
+                <div class="tiles-item">
+                    <div class="tile-image" style="background-image: url(img/nzxt-bld.avif);"></div>
+                    <div>
+                        <img id="nzxt-bld-logo" src="img/nzxt-bld-logo.avif">
+                        <p style="margin-top: 10px;">Build that dream setup with great prices on a custom build.</p>
+                        <button>Customize</button>
+                    </div>
+                </div>
+                <div class="diablo-content">
+                    <div class="diablo-panel">
+                        <div></div>
+                        <div>
+                            <img src="img/nzxt-nvidia.avif">
+                            <h1>Rise Against Evil</h1>
+                            <p>Get Diablo® IV with select GeForce RTX 40 Series Prebuilt or Custom PC*</p>
+                            <p>*Any GeForce RTX 4090, 4080, 4070 Ti, 4070 PC.</p>
+                            <button style="width: 180px;">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="player-prime-content">
+            <img src="img/player-prime-back.avif">
+            <div class="player-prime-banner">
+                <div class="player-prime-container">
+                    <div class="dots">
+                        <span style="display: inline-block; height: 20px; width: 40px; background-color: #40a366; border-radius: 10px;"></span>
+                        <span style="display: inline-block; height: 20px; width: 40px; background-color: #1e93e0; border-radius: 10px;"></span>
+                        <span style="display: inline-block; height: 20px; width: 40px; background-color: #ad5ecc; border-radius: 10px;"></span>
+                    </div>
+                    <h1>Player: Prime</h1>
+                    <p><i>Player: Prime</i> variants include an upgraded GPU, CPU and the latest NZXT PC cases, for maximum performance and style. Take your gaming to the next level with <i>Player: Prime.</i></p>
+                </div>    
+            </div>
+        </section>
+        <section class="component-section">
+            <h1>Our Newest Releases</h1>
+            <p>Unleash the full potential of your gaming rig with NZXT's newest PC components, engineered for speed, precision, and unmatched reliability.</p>
+            <div class="component-grid">
+                <div class="component-item" id="top" style="background-color: #E4DAFF; background-image: url(img/kreken-krekenelite.avif);">
+                    <h1>Kraken and Kraken Elite</h1>
+                    <p>High-performance cooling with a customizable LCD screen with our all-new Kraken Series.</p>
+                    <a href="#">Shop the New Krakens <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+                <div class="component-item" id="top" style="background-image: url(img/rgb-core-fans.avif), url(img/card-back.avif);">
+                    <h1>RGB Core Fans</h1>
+                    <p>The F Series RGB Core Fans offer brilliant lighting and premium cooling.</p>
+                    <a href="#">Shop Core Fans <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+                <div class="component-item" id="middle" style="background-color: #000000; background-image: url(img/h5flow-h7flow.avif), url(img/card-back-plate.avif);">
+                    <h1>H5 Flow RGB & H7 Flow RGB</h1>
+                    <p>The brighter side of the H Series.</p>
+                    <a href="#">H5 Flow RGB <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                    <a href="#">H7 Flow RGB <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+                <div class="component-item" id="middle" style="background-color: #000000; background-image: url(img/capsule-mini.avif);">
+                    <h1>Capsule Mini</h1>   
+                    <p>Capture unexpectedly big sound on the excitingly small Capsule Mini.</p>
+                    <a href="#">Capsule Mini <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                    <a href="#">Boom Arm Mini <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+            </div>
+            <div class="component-3-grid">
+                <div class="component-item" id="bottom" style="background-image: url(img/motherboard.avif);">
+                    <h1>N7 Motherboards</h1>
+                    <p>ATX Motherboards with Full Cover, CAM Controls, and Wi-Fi.</p>
+                    <a href="#">Shop Motherboards <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+                <div class="component-item" id="bottom" style="background-image: url(img/psu.avif);">
+                    <h1>C1000 PSU</h1>
+                    <p>Ideal for PCs that have multiple GPUs and high-performance CPUs.</p>
+                    <a href="#">Shop C1000 Gold <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+                <div class="component-item" id="bottom" style="background-image: url(img/capture-cards.avif);">
+                    <h1>Capture Cards</h1>
+                    <p>Plug-and-play with ultra-low latency streaming in HD & 4K.</p>
+                    <a style="font-family: 'GothamThin'; font-size: 16px;" href="#">Shop Capture Cards <i class="fa-solid fa-chevron-right fa-xs" style="color: #871ee9;"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="shop-tiles">
+            <h1>Shop NZXT Bestsellers</h1>
+            <p>Join the thousands of PC gamers who have made NZXT's best-selling PC products their go-to choice for top-tier performance, reliability, and style.</p>
+            <div class="tiles-container">
+                <div class="shop-tiles-item">
+                    <div id="shop-item-1"></div>
+                    <h1>Player: Two</h1>
+                    <p>H5 Elite RTX 4070 Gaming PC</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p>$1,599.00</p>
+                        <div class="product-color">
+                            <span id="color-span-1" onclick="color_change_white_1()"></span>
+                            <span id="color-span-2" onclick="color_change_black_1()"></span>
+                        </div>
+                    </div>
+                </div>                                        
+                <div class="shop-tiles-item">
+                    <div id="shop-item-2"></div>
+                    <h1>Player: Two Prime</h1>
+                    <p>H5 Elite RTX 4070 Ti Gaming PC</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p>$1,999.00</p>
+                        <div class="product-color">
+                            <span id="color-span-3" onclick="color_change_white_2()"></span>
+                            <span id="color-span-4" onclick="color_change_black_2()"></span>
+                        </div>
+                    </div>
+                </div>                                        
+                <div class="shop-tiles-item">
+                    <div id="shop-item-3"></div>
+                    <h1>Player: Three</h1>
+                    <p>H7 Flow RTX 4070 Ti Gaming PC</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p id="discount">$94.99</p><p> $2,399.00</p>
+                        <div class="product-color">
+                            <span id="color-span-5" onclick="color_change_white_3()"></span>
+                            <span id="color-span-6" onclick="color_change_blackwhite_3()"></span>
+                            <span id="color-span-7" onclick="color_change_black_3()"></span>
+                        </div>
+                    </div>
+                </div>                                        
+                <div class="shop-tiles-item">
+                    <div id="shop-item-4"></div>
+                    <h1>Player: Three Prime</h1>
+                    <p>H7 Elite RTX 4090 Gaming PC</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p id="discount">$94.99</p><p> $3,799.00</p>
+                        <div class="product-color">
+                            <span id="color-span-8" onclick="color_change_white_4()"></span>
+                            <span id="color-span-9" onclick="color_change_black_4()"></span>
+                        </div>
+                    </div>
+                </div>                                        
+                <div class="shop-tiles-item">
+                    <div id="shop-item-5"></div>
+                    <h1>H510 Flow</h1>
+                    <p>Compact Mid-tower Case</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p>$89.99</p>
+                        <div class="product-color">
+                            <span id="color-span-10" onclick="color_change_white_5()"></span>
+                            <span id="color-span-11" onclick="color_change_black_5()"></span>
+                        </div>
+                    </div>
+                </div>                                        
+                <div class="shop-tiles-item">
+                    <div id="shop-item-6"></div>
+                    <h1>Kraken Z63 RGB</h1>
+                    <p>280mm Liquid Cooler with LCD Display</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p>$274.99</p>
+                        <div class="product-color">
+                            <span id="color-span-12" onclick="color_change_white_6()"></span>
+                            <span id="color-span-13" onclick="color_change_black_6()"></span>
+                        </div>
+                    </div>
+                </div>     
+                <div class="shop-tiles-item">
+                    <div id="shop-item-7"></div>
+                    <h1>H7 Elite</h1>
+                    <p>Premium Mid-Tower Case</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p>$199.99</p>
+                        <div class="product-color">
+                            <span id="color-span-14" onclick="color_change_white_7()"></span>
+                            <span id="color-span-15" onclick="color_change_black_7()"></span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="shop-tiles-item">
+                    <div id="shop-item-8"></div>
+                    <h1>H5 Flow</h1>
+                    <p>Compact Mid-tower Airflow Case</p>
+                    <p><i class="fa-regular fa-bell" style="color: #15b630;"></i></i> See Promotion</p>
+                    <div>
+                        <p>$94.99</p>
+                        <div class="product-color">
+                            <span id="color-span-16" onclick="color_change_white_8()"></span>
+                            <span id="color-span-17" onclick="color_change_black_8()"></span>
+                        </div>
+                    </div>
+                </div>                                        
+            </div>
+        </section>
+        <section class="affirm">
+            <div class="affirm-container">
+                <div class="affirm-content">
+                    <img src="img/affirm.avif">
+                    <h1>Pay Later with Affirm</h1>
+                    <p>Buy now, pay over time. Quick and easy. No hidden fees. Select "Affirm monthly payments" during checkout.</p>
+                </div>
+            </div>
+        </section>
+        <section class="wot">
+            <h1 style="display: block;">What Others Say</h1>
+            <div class="wot-container">
+                <div class="wot-content">
+                    <div class="wot-item">
+                        <div><img src="img/pc-gamer.avif"></div>
+                        <div><p>“Offering real-world performance data is a great idea, and makes the process of ordering a PC much less abstract for newcomers.”</p></div>
+                    </div>
+                    <div class="wot-item">
+                        <div><img src="img/kotaku.avif"></div>
+                        <div><p>“There's something lovely about having a PC that comes with a set of guaranteed predicted frames-per-second targets for the games I planned.”</p></div>
+                    </div>
+                    <div class="wot-item">
+                        <div><img src="img/tech-radar.avif"></div>
+                        <div><p>“This is certainly a very neat idea, and the company is putting its money where its mouth is regarding the frame-rate estimations.”</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section class="nzxt">
+                <div class="nzxt-container">
+                    <div class="nzxt-content">
+                        <p>NZXT</p>
+                        <h1>NZXT</h1>
+                        <a href="">Shop Player PCs </a><i class="fa-solid fa-chevron-right fa-xs" style="color: white;"></i>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="email">
+                        <div>
+                            <h1>Stay in Touch</h1>
+                            <p>Stay up to date on NZXT product news and offers.</p>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <button>Notify Me</button>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-panel">
+                            <i class="fa-brands fa-facebook fa-xl"></i>
+                            <i class="fa-brands fa-square-twitter fa-xl"></i>
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                            <i class="fa-brands fa-youtube fa-xl"></i>
+                            <i class="fa-brands fa-twitch fa-xl"></i>
+                            <i class="fa-brands fa-reddit fa-xl"></i>
+                            <i class="fa-brands fa-tiktok fa-xl"></i>
+                            <i class="fa-brands fa-discord fa-xl"></i>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Language</p>
+                                <button>English</button><i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div>
+                                <p>Country</p>
+                                <button>United States</button><i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-columns">
+                        <div>
+                            <h3>CONTACT</h3>
+                            <p>Company</p>
+                            <p>Customer Support</p>
+                            <p>Submit a Request</p>
+                            <p style="color: #9CA3AF;">Support Center</p>
+                        </div>
+                        <div>
+                            <h3>ABOUT NZXT</h3>
+                            <p>Founder Q & A</p>
+                            <p>Careers</p>
+                            <p>Customer Reviews</p>
+                        </div>
+                        <div>
+                            <h3>COMMUNITY</h3>
+                            <p>Our Discord</p>
+                            <p>Newsroom & Blog</p>
+                        </div>
+                        <div>
+                            <h3>SOFTWARE</h3>
+                            <p>CAM</p>
+                            <p>CAM Feedback</p>
+                        </div>
+                        <div>
+                            <h3>ACCOUNT</h3>
+                            <p>Manage Your Account</p>
+                        </div>
+                        <div>
+                            <h3>NZXT STORE</h3>
+                            <p>NZXT BLD PC</p>
+                            <p>Refurbished Builds</p>
+                            <p>FAQ</p>
+                            <p style="color: #9CA3AF;">Find a Retailer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rights">
+            <div class="rights-container">
+                <div><p>NZXT</p></div>
+                <div class="rights-section">
+                    <p>© NZXT Inc. 2023 All Rights Reserved</p>
+                    <p>Legal</p>
+                    <p>Privacy Policy</p>
+                    <p>Manage Cookie Preferences</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
